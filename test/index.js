@@ -62,7 +62,7 @@ test('url parser', t => {
 
 
 test('connected component', t => {
-  t.plan(2);
+  t.plan(1);
 
   function mapURLToProps(getURL) {
     return {
