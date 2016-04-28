@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    "transform-es2015-modules-commonjs",
+    "transform-es2015-arrow-functions",
+    "transform-es2015-parameters",
+    "transform-object-assign",
+    "transform-es2015-classes",
+    "transform-class-properties",
+    "transform-es2015-spread",
+    "transform-react-constant-elements",
+    "transform-react-inline-elements"
+  ]
+}
