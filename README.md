@@ -25,7 +25,7 @@ render(
   document.body,
 );
 ```
-* `URLProvider` is a High-Order Components
+* `URLProvider` is a High-Order Component.
 * `URLProvider` expect only one property named `urls`.
 * `urls` should be an object where the keys are the URLs names and the values are the unparsed url using the sintax of Express.js.
 
@@ -45,9 +45,10 @@ class UserData extends Component { ... }
 
 export default UserData;
 ```
-* The `connectURL` it's optional.
+* The `connectURL` argument (`mapURLToProps`) it's optional.
 * If you don't supply it then it will add the `getURL` function as a property.
 * The `mapURLToProps` function will receive the `getURL` function and `props` object as parameter and should return an object.
+* The `getURL` function receive the URL name and an objet with the parameters to use in it and return the parsed URL.
 * You can use it as a decorator (like the example above) or just as a function and send them the component to connect.
 
 ### parser
@@ -62,6 +63,6 @@ const profileURL = parser(urls, 'profile', {
   username: 'sergiodxa',
 });
 ```
-* This is a Low-Level API and this used internally for the `connectURL` decorator, it's not expected that you should use it.
-* `parser` receive as arguments the `urls` map, the url name and the options/parameters object.
+* This is a Low-Level API and is used internally for the `connectURL` decorator, it's not expected that you use it directly.
+* `parser` receive as arguments the `urls` map, the URL name and the options/parameters object.
 * It will return the final parsed url string.
