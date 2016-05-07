@@ -27,7 +27,7 @@ render(
 ```
 * `URLProvider` is a High-Order Component.
 * `URLProvider` expect only one property named `urls`.
-* `urls` should be an object where the keys are the URLs names and the values are the unparsed url using the sintax of Express.js.
+* `urls` should be an object where the keys are the URLs names and the values are the unparsed url using the syntax of Express.js.
 
 ### connectURL
 ```javascript
@@ -48,7 +48,7 @@ export default UserData;
 * The `connectURL` argument (`mapURLToProps`) it's optional.
 * If you don't supply it then it will add the `getURL` function as a property.
 * The `mapURLToProps` function will receive the `getURL` function and `props` object as parameter and should return an object.
-* The `getURL` function receive the URL name and an objet with the parameters to use in it and return the parsed URL.
+* The `getURL` function receive the URL name and an object with the parameters to use in it and return the parsed URL.
 * You can use it as a decorator (like the example above) or just as a function and send them the component to connect.
 
 ### parser
