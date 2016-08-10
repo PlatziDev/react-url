@@ -81,9 +81,7 @@ test('connected component', t => {
       {
         urls,
       },
-      [
-        createFactory(ConnectedApp)({ key: 1 }),
-      ]
+      createFactory(ConnectedApp)({ key: 1 })
     );
   }
 
