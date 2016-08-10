@@ -1,6 +1,6 @@
 {
   "name": "react-url",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "URL resolver for React.js, like the Django url templatetag",
   "main": "build/index.js",
   "directories": {
